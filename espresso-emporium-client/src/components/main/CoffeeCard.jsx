@@ -19,7 +19,9 @@ const CoffeeCard = ({ coffee }) => {
           <Link to={`/coffeeDetails/${_id}`}>
             <button className="btn join-item bg-[#999]">View</button>
           </Link>
-          <button className="btn join-item bg-[#999]">Edit</button>
+          <Link to={`/updateCoffee/${_id}`}>
+            <button className="btn join-item bg-[#999]">Edit</button>
+          </Link>
           <button className="btn join-item bg-[#999]">Cancel</button>
         </div>
       </section>
